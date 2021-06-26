@@ -1,0 +1,141 @@
+.topmenu{
+	font-size: 18px;
+	font-weight: 700px;
+
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0 50px 0 50px;
+
+	color: #adb2c0;
+	background-color: #f8f8fa;
+}
+
+.topmenu__inner{
+	background-color: #f8f8fa;
+	padding:10px 0;
+}
+
+.topmenuMenuLeft{
+	display: flex;
+}
+
+.topmenuMenuRight{
+	display: flex;	
+}
+
+.topmenu__circle__inner{
+	width:60px;
+	
+
+	margin-left:30px;
+
+	position: relative;
+}
+.topmenu__circle{
+	width: 60px;
+	height: 60px;
+
+	position: absolute;
+	left:0;
+	top:-20px;
+	background-color: #ba1c31;
+	color: #fff;
+	border-radius:50%;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	font-weight: 600;
+	font-size: 22px;
+
+	transition: .3s left, .3s top, all .5s;
+}
+.topmenu__circle:hover{
+	transform: scale(2);
+	left:0;
+	top:10px;
+	
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.topmenu__circle:hover:after{
+	content:"Произошёл страховой случай";
+	width:70%;
+	font-size:6px;
+	font-weight: 400;
+	line-height:120%;
+	display: block;
+	text-align: center;
+
+	margin-top: 3px;
+}
+@media (max-width: 1440px){
+	.topmenu{
+		font-size: 16px;
+		
+	}
+}
+@media(max-width:1080px){
+	.topmenu{
+		
+		font-size: 12px;
+		margin: 0 30px 0 30px;	
+	}
+	
+	.topmenu__circle__inner{
+		margin-left:10px;
+	}
+}
+@media(max-width:720px){
+	.topmenu{
+		font-size: 14px;
+
+	
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		/* margin: 0 50px 0 50px; */
+	}
+	
+	
+	.topmenuMenuLeft{
+		flex: 1 1 0;
+		
+		justify-content: space-around;
+	}
+	.topmenuMenuRight{
+		flex: 1 1 0;
+		justify-content: space-around;
+		margin-left:40px;
+	}
+	.topmenu__circle__inner{
+		display: none;
+	}
+	
+	
+	
+}
+@media(max-width:480px){
+	.topmenu{
+		justify-content: space-between;
+		flex-direction: row;
+	
+		margin: 0 50px 0 50px;	
+	}
+	
+	.topmenuMenuLeft{
+		flex-direction: column;
+		justify-content: space-around;
+	}
+	.topmenuMenuRight{
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}
+@media(max-width:320px){
+	
+}

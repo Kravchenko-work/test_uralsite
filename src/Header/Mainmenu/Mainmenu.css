@@ -1,0 +1,95 @@
+.header__mainmenu__inner{
+	color:#06408d;
+	font-size: 24px;
+	font-weight: 700;
+
+	box-shadow: 5px .005px 5px #979a9c;
+}
+.header__mainmenu{
+	margin: 0 50px;
+	display: flex;
+	justify-content: space-between;
+	height:70px;
+
+}
+.mainmenu__left{
+	position: relative;
+	left: 0;
+	top:5%;
+}
+.mainmenu__left:hover{
+	cursor: pointer;
+}
+
+.mainmenu__center{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.mainmenu__item{
+	margin-left: 30px;
+	padding-right: 25px;
+	background: url('https://uralsibins.ru/static/media/dropdown_arrow-dimgray.fae09ae4.svg') center right no-repeat scroll;
+}
+.mainmenu__item:first-child{
+	margin-left: 0;
+}
+.mainmenu__item:hover,.mainmenu__login:hover{
+	color: #026fff;
+	cursor: pointer;
+
+	transition: .2s color;
+}
+
+.mainmenu__right{
+	display: flex;
+	align-items: center;
+}
+.mainmenu__login{
+	padding-left:30px;
+	background: url('https://uralsibins.ru/static/media/person-blue.71f20266.svg') center left no-repeat scroll;
+}
+
+.mainmenu__search{
+	margin-left: 25px;
+}
+
+@media (max-width: 1500px){
+	.header__mainmenu{
+		
+		height:60px;
+	
+	}
+	.header__mainmenu__inner{		
+		font-size: 16px;
+	}
+	/* .header__mainmenu{
+		height:70px;
+	} */
+	
+	
+}
+@media(max-width:1080px){
+	.header__mainmenu{
+		flex-direction: column;
+		height:190px;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.mainmenu__left{
+		top: 0;	
+	}
+}
+
+@media(max-width:500px){
+	.header__mainmenu{
+		font-size: 12px;
+	}
+	.mainmenu__item{
+		padding-right:15px;
+		margin-left:15px;
+	}
+	.mainmenu__login{
+		height:19px;
+	}
+}

@@ -1,0 +1,84 @@
+.service__inner{
+	max-width: 1080px;
+	width: 100%;
+	margin: 40px auto;
+}
+.service{
+	margin-top: 40px;
+	color: #282828;
+	display: flex;
+	justify-content: space-between;
+}
+.service__line {
+	border: 1px solid #dfe2ee;
+}
+
+.service__title__1,
+.service__title__2,
+.service__title__3{
+	flex: 0 1 200px;
+	padding-left:100px;
+	height: 70px;
+	background: url('https://uralsibins.ru/upload/iblock/b5d/b5d5477cd0b9dbe32ac93d7a8e9e9726.svg') left center / contain no-repeat scroll;
+
+	display: flex;
+	align-items: center;
+	letter-spacing: .3px;
+	line-height: 1.2;
+}
+.service__title__2{
+	background-image: url('https://uralsibins.ru/upload/iblock/a83/a83a33cac73988c3f698e825dd012bd0.svg');
+}
+.service__title__3{
+	background-image: url('https://uralsibins.ru/upload/iblock/ffa/ffa91cbfcfa9719dfb68e1898a61f81f.svg');
+}
+
+.service__pointer{
+	flex: 0 0 40px;
+	background: url('https://uralsibins.ru/images/travels/next.png') center center / contain no-repeat scroll;
+}
+@media(max-width:1100px){
+	.service__pointer{
+		flex: 0 0 30px;
+	}
+	.service__title__1,
+	.service__title__2,
+	.service__title__3{
+		flex: 0 1 150px;
+		padding-left:75px;
+		height: 50px;
+		
+		font-size: 12px;
+		
+	}
+}
+
+@media(max-width:750px){
+	.service{
+		flex-direction: column;
+	}
+	.service__title__1,
+	.service__title__2,
+	.service__title__3{
+		flex: 0 1 50px;
+
+		margin-bottom: 20px;
+		font-size: 18px;
+	}
+	.service__pointer{
+		display: none;
+	}
+	.service__inner{
+		padding: 20px;
+		margin-bottom: 0px;
+	}
+}
+
+@media(max-width:450px){
+	
+	.service__title__1,
+	.service__title__2,
+	.service__title__3{
+		font-size: 14px;
+	}
+}
